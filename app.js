@@ -15,6 +15,9 @@ document.querySelector('#fourth').addEventListener('click', updateBgColor);
 let pikachu = document.querySelector("img");
 console.log(pikachu);
 
+// Dins la funció creem la variable que guarda el punt on hem clicat (clickedButton), que es troba a la propietat target de l'objecte event, és a dir el punt on es produeix l'event click. 
+// Agafem el color del fons del punt on succeeix l'event, que es troba mitjançant la funció getAttribute que busca l'atribut "data-color" de l'event.target i fem que el color de fons de la imatge de pikachu es converteixi en el del punt on executem la funció
+
 function updateBgColor(event) {
    let clickedButton = event.target;
    let color = clickedButton.getAttribute("data-color");
